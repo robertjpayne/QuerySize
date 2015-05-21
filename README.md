@@ -1,6 +1,6 @@
 # QuerySize
 
-A tasty bit of Swift to make writing device and/or screen size specific code.
+A tasty bit of Swift to make writing device and/or screen size specific code easier.
 
 ## Requirements
 
@@ -80,26 +80,26 @@ import QuerySize
 // ...
 
 QuerySize(.ByIdiom(.Phone)) {
-    println("i am a phone")
+    println("I am a phone")
 }
 QuerySize(.ByIdiom(.Pad)) {
-    println("i am a pad")
+    println("I am a pad")
 }
 
 QuerySize(.ByIdiom(.Phone), .ByScreenMinWidth(321)) {
-    println("i am a phone at least 321pt wide")
+    println("I am a phone at least 321pt wide")
 }
 
 QuerySize(.ByIdiom(.Phone), .ByScreenMaxWidth(320)) {
-    println("i am a phone at most 320pt wide")
+    println("I am a phone at most 320pt wide")
 }
 
 QuerySize(.ByIdiom(.Phone), .ByScreenMaxWidth(320), .ByScreenMaxHeight(480)) {
-    println("i am a phone at most 320pt wide and 480pt high")
+    println("I am a phone at most 320pt wide and 480pt high")
 }
 
 QuerySize(.ByIdiom(.Phone), .ByScreenMaxWidth(320), .ByScreenMinHeight(481)) {
-    println("i am a phone at most 320pt wide and at least 481pt high")
+    println("I am a phone at most 320pt wide and at least 481pt high")
 }
 
 ```

@@ -53,7 +53,7 @@ $ brew install carthage
 To integrate QuerySize into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```
-github "QuerySize/QuerySize" >= 1.0.0
+github "robertjpayne/QuerySize" >= 1.0.0
 ```
 
 ### Embedded Framework
@@ -61,7 +61,7 @@ github "QuerySize/QuerySize" >= 1.0.0
 - Add QuerySize as a [submodule](http://git-scm.com/docs/git-submodule) by opening the Terminal, `cd`-ing into your top-level project directory, and entering the following command:
 
 ```bash
-$ git submodule add https://github.com/QuerySize/QuerySize.git
+$ git submodule add https://github.com/robertjpayne/QuerySize.git
 ```
 
 - Open the `QuerySize` folder, and drag `QuerySize.xcodeproj` into the file navigator of your app project.
